@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ko" class="load">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" > -->
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
+<meta name="author" content="J45bongsik">
+<meta name="description" content="안녕하세요. 조상원 포트폴리오 사이트 입니다.">
+<meta name="keywords" content="조상원, J45bongsik, 퍼블리셔, 웹 퍼블리셔, FrontEnd">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="../images/og_image.jpg">
+<meta property="og:title" content="J45 PORTFOLIO">
+<meta property="og:description" content="안녕하세요. 조상원 포트폴리오 사이트 입니다.">
+<meta property="og:url" content="github.com/j45bongsik/j45">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- 구글 검색결과 아이콘 및 파비콘 -->
+<link rel="shortcut icon" href="../images/favicon.ico">
+
+<!-- AOS 터치아이콘 -->
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+
+<!-- IOS 터치아이콘 -->
+<link rel="apple-touch-icon" sizes="16x16" href="../images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="96x96" href="../images/favicon-96x96.png">
+
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/mobile.css">
+<script src="../lib/jquery-3.4.1.min.js"></script>
+<script src="../lib/jquery-ui.min.js"></script>
+<script src="../lib/lottie/lottie.min.js"></script>
+<script src="../lib/gsap/v_3.12.2/gsap.min.js"></script>
+<script src="../lib/gsap/v_3.12.2/ScrollTrigger.min.js"></script>
+<script src="../lib/gsap/v_3.12.2/ScrollToPlugin.min.js"></script>
+<script src="../lib/lenis/v_1.0.9/lenis.min.js"></script>
+<script src="../js/gsapAnimation.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVKNX2MGB3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZVKNX2MGB3');
+</script> 
+    <title>J45 Portfolio</title>
+</head>
+
+<body class="load">
+
+    <!-- Channel Plugin Scripts -->
+	<script>
+        (function() {
+          var w = window;
+          if (w.ChannelIO) {
+            return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+          }
+          var ch = function() {
+            ch.c(arguments);
+          };
+          ch.q = [];
+          ch.c = function(args) {
+            ch.q.push(args);
+          };
+          w.ChannelIO = ch;
+          function l() {
+            if (w.ChannelIOInitialized) {
+              return;
+            }
+            w.ChannelIOInitialized = true;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+            s.charset = 'UTF-8';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+          if (document.readyState === 'complete') {
+            l();
+          } else if (window.attachEvent) {
+            window.attachEvent('onload', l);
+          } else {
+            window.addEventListener('DOMContentLoaded', l, false);
+            window.addEventListener('load', l, false);
+          }
+        })();
+        ChannelIO('boot', {
+          "pluginKey": "a82b1b31-0d7e-4f9c-ba89-c97783625004"
+        });
+      </script>
+      <!-- End Channel Plugin -->
+    
+    <div id="root">
+        
+        <article class="loadingArea">
+            <div class="aniArea">
+            </div>
+            <div class="titleArea">
+                <h3 class="title title01">LOADING</h3>
+                <div class="loadingPercent">
+                    <p>
+                        %
+                    </p>
+                </div>
+            </div>
+            
+        </article>
+
+        <!--header-->
+        <header id="header">
+            <!--accNav-->
+<div id="accNav">
+    <a href="#container">본문 바로가기</a>
+</div>
+
+<article class="inner">
+
+    <article class="logoArea">
+        <h2 class="logo">
+            <a href="#">J45</a>
+        </h2>
+    </article>
+    <nav id="gnb">
+        <ul>
+            <li>
+                <a href="#section1" class="active">
+                    <span>MAIN</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section2">
+                    <span>INTRO</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section3">
+                    <span>PORTFOLIO</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section4">
+                    <span>REFRENCE</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section5">
+                    <span>CONTACT</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</article>
+
+<!--//accNav-->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div class="content">
+                    <h3 class="hidden">본문 영역</h3>
+
+                    <article class="sectionSum">
+                        <section id="section1" class="section">
+                            <article class="secCont">
+                                <article class="bgArea">
+                                    <div class="lottieItem developer"></div>
+                                </article>
+                                <div class="bgDimm"></div>
+                                <article class="tagArea">
+                                    
+                                </article>
+                                <article class="titleArea">
+                                    <h3 class="title title02">
+                                        PORT<br />
+                                        <em>
+                                            FOLIO
+                                        </em>
+                                    </h3>
+                                </article>
+                            </article>
+                        </section>
+
+                        <script>
+                           
+
+                        </script>
+                        <section id="section2" class="section">
+                            <article class="secCont">
+                                <div class="inner">
+                                    <div class="gallery">
+                                        <div class="left">
+                                            <div class="textArea">
+                                                <div class="text">
+                                                    <h4>안녕하세요. 조상원 입니다😃</h4>
+                                                    <p>저의 포트폴리오 사이트를 방문해 주셔서 감사합니다. <br />
+                                                        본 사이트는 GSAP 애니메이션과 Lottie를 적극 사용해 작성 되었습니다.<br />
+                                                        또한, 챗봇을 통해 실시간 채팅이 가능하며 google analytics를 심어 본 사이트 접속자 통계가 이루어지고 있습니다.
+                                                        <br /><br />
+                                                        HTML5, CSS3, SCSS, JavaScript, jQuery, Gulp, React.js 등의 언어와 스킬을 사용할수 있으며<br />
+                                                        본 사이트를 통해 제가 만들어 온 PORTFOLIO와 REFRENCE BOOK을 차례대로 확인하실수 있습니다.
+                                                        
+                                                    </p>
+                                                </div>
+                                                <div class="text">
+                                                    <h4>번뜩이는 아이디어💡</h4>
+                                                    <p>아이디어가 떠오르면 그것을 실현시키기 위해 바로 메모하고 업무 시 적용 시킬곳이 있는지 검토합니다 <br />
+                                                        그렇게 메모하고 검토된 아이디어들은 나의 resource가 되어 작성된 산출물에 완성도를 높여줍니다.
+                                                    </p>
+                                                </div>
+                                                <div class="text">
+                                                    <h4>치열하게 고민하며 일합니다.</h4>
+                                                    <p>
+                                                        시안을 보고 큰 생각없이 '그냥' 마크업 하는것은 쉽습니다.
+                                                        하지만 '그냥' 작성된 마크업은 장기적인 시점에서 개인과 회사의 발전을 더디게 합니다
+                                                        코드의 재 사용성과 User Experience를 고민하며 작성된 코드는 
+                                                        개인의 역량을 높여줍니다 그렇기 때문에 끊임없이 치열하게 고민하며 일 합니다.
+                                                    </p>
+                                                </div>
+                                                <div class="text">
+                                                    <h4>경험과 아이디어를 공유 합니다.</h4>
+                                                    <p>동료들과 아이디어를 경험과 아이디어를 공유하는것의 힘을 강하게 믿습니다<br />
+                                                        아이디어를 공유하고 함께 경험해 나가며 회사생활의 가치를 쫓아 개인의 역량을 높이면
+                                                        완성된 산출물의 퀄리티는 더욱 단단하고 빠르게 높아질 것 입니다.
+                                                    </p>
+                                                </div>
+                                                <div class="text">
+                                                    <h4 class="last">Thnak :U</h4>
+                                                    <p>
+                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="imojiArea">
+                                                <div class="imoji imoji01">
+                                                    <img src="../images/imoji01.png" alt="이모지1">
+                                                </div>
+                                                <div class="imoji imoji02">
+                                                    <img src="../images/imoji02.png" alt="이모지2">
+                                                </div>
+                                                <div class="imoji imoji03">
+                                                    <img src="../images/imoji03.png" alt="이모지3">
+                                                </div>
+                                                <div class="imoji imoji04">
+                                                    <img src="../images/imoji04.png" alt="이모지4">
+                                                </div>
+                                                <div class="imoji imoji05">
+                                                    <img src="../images/imoji05.png" alt="이모지5">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </article>
+                    <section id="section3" class="section">
+                        <article class="secCont">
+                            <section id="vrSection1" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBSITE(반응형)</h3>
+                                                <h4 class="title title04">KR철도v.1</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    국토교통부에 파견되어 작성한 대민사이트 입니다.
+                                                    <br /><br />
+                                                    디자인시안 검수가 완료 되었지만 마무리 과정에서 클라이언트로부터 <br class="pc"/>디자인 변경이 요청되어 폐기된 프로젝트입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/01_%EC%B2%A0%EB%8F%84%EC%9E%AC%EC%82%B0%ED%8F%AC%ED%84%B8(%ED%8F%90%EA%B8%B0)/kr/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr01_middle01.png" alt="KR철도 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr01.png" alt="KR철도 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection2" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBSITE</h3>
+                                                <h4 class="title title04">KLIP헬프데스크</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    KLIP헬프데스크 포털사이트 운영(고도화) 퍼블리싱
+                                                    <br /><br />
+                                                    매년 연속성을 띄고 고도화 및 추가항목이 발생하는 프로젝트로 단기간에 빠르게 <br class="pc"/>쳐 나가는것보다 재사용성을 우선적으로 염두해두고 고민하며 작성해나가야 하는 프로젝트 입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/02_KLIP%ED%97%AC%ED%94%84%EB%8D%B0%EC%8A%A4%ED%81%AC/KLIP%ED%97%AC%ED%94%84%EB%8D%B0%EC%8A%A4%ED%81%AC/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr02_middle01.png" alt="KLIP헬프데스크 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    
+                                    <img src="../images/bg_vr02.png" alt="KLIP헬프데스크 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection3" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBSITE</h3>
+                                                <h4 class="title title04">LX통합플랫폼</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    LX통합 플랫폼 관리자 및 사용자 사이트 퍼블리싱
+                                                    <br /><br />
+                                                        랜딩페이지부터 사용자단, 관리자단까지 제작된 페이지 입니다.<br class="pc" />
+                                                        그외 jqGrid 와 차트 등 다양한 라이브러리가 삽입된 프로젝트 입니다. 
+                                                    <br />
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/03_LX%ED%86%B5%ED%95%A9%ED%94%8C%EB%9E%AB%ED%8F%BC/LX%ED%86%B5%ED%95%A9%ED%94%8C%EB%9E%AB%ED%8F%BC/%EA%B4%80%EB%A6%AC%EC%9E%90N/lx/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr03_middle01.png" alt="LX통합플랫폼 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr03.png" alt="LX통합플랫폼 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection4" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBSITE(반응형)</h3>
+                                                <h4 class="title title04">KR철도v.2</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    첫번째 버전이 폐기되고 재 구축된 프로젝트로
+                                                    페이지를 빠르게 쳐 나가면서 완성도를 높인 페이지 입니다.<br class="pc" />
+                                                    페이지는 간단하지만 클라이언트의 요구사항을 발빠르게 피드백한 프로젝트 입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/05_%EC%B2%A0%EB%8F%84%EC%9E%AC%EC%82%B0%ED%8F%AC%ED%84%B8/kr-potal/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr04_middle01.png" alt="KR철도v.2 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr04.png" alt="KR철도v.2 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection5" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBSITE(반응형)</h3>
+                                                <h4 class="title title04">EGIS</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    EGIS 기업 홈페이지 퍼블리싱
+                                                    <br /><br />
+                                                    원페이지 스크롤 및 애니메이션 효과 등 적용하였으며 반응형으로 구성된 페이지 입니다.<br class="pc" />
+                                                    와이드 디자인에 맞춰 디테일한 부분들을 신경쓴 프로젝트 입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/08_egis/egis/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr05_middle01.png" alt="EGIS 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr05.png" alt="EGIS 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection6" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">대시보드</h3>
+                                                <h4 class="title title04">현대오일뱅크</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    현대오일뱅크 대시보드 및 로그인페이지
+                                                    <br /><br />
+                                                    MyChart, GridStack 등 라이브러리를 활용하여 구성된 페이지로<br class="pc" />
+                                                    drag&drop / 확장 축소 등 사용자의 편의에 따라 변경이 가능하도록 진행된 프로젝트 입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/09_%ED%98%84%EB%8C%80%EC%98%A4%EC%9D%BC%EB%B1%85%ED%81%AC/oilbank/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr06_middle01.png" alt="현대오일뱅크 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr06.png" alt="현대오일뱅크 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection7" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBSITE</h3>
+                                                <h4 class="title title04">KGEOP 입지분석시스템</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    AmChart 등 라이브러리 활용이된 GIS 전형적인 페이지 입니다.
+                                                    <br /><br />
+                                                    페이지 수가 많은 관리자 페이지는 마크업과 CSS의 재사용성을 고민하고 작성하지 않으면
+                                                    어려워지는 작업니다.<br class="pc" />
+                                                    효율을 높이고 시간을 단축하기 위해 재사용성을 고려하며 작업한 프로젝트 입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/15_kgeo%EC%9E%85%EC%A7%80%EB%B6%84%EC%84%9D%EC%8B%9C%EC%8A%A4%ED%85%9C/kgeop/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr07_middle01.png" alt="KGEOP 입지분석시스템 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr07.png" alt="KGEOP 입지분석시스템 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection8" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBSITE</h3>
+                                                <h4 class="title title04">KGEOP 부동산개발업</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    관리자 퍼블리싱, JqGrid 라이브러리 활용하며 BackEnd 개발자와 협업
+                                                    <br /><br />
+                                                    페이지 수가 많은 관리자 페이지는 마크업과 CSS의 재사용성을 고민하고 작성하지 않으면
+                                                    어려워지는 작업니다.<br class="pc" />효율을 높이고 시간을 단축하기 위해 재사용성을 고려하며 작업한 프로젝트 입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/18_KLIS%EB%B6%80%EB%8F%99%EC%82%B0%EA%B0%9C%EB%B0%9C%EC%97%85/%EB%B6%80%EB%8F%99%EC%82%B0%EA%B0%9C%EB%B0%9C%EC%97%85/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <!-- <img src="../images/vr07_middle01.png" alt="KGEOP 입지분석시스템 이미지"> -->
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr08.png" alt="KGEOP 부동산개발업 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection9" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBSITE</h3>
+                                                <h4 class="title title04">REPIS 부동산원</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    관리자 퍼블리싱, JqGrid / MyChart 등 라이브러리 활용
+                                                    <br /><br />
+                                                    페이지 수가 많은 관리자 페이지는 마크업과 CSS의 재사용성을 고민하고 작성하지 않으면
+                                                    어려워지는 작업니다.<br class="pc" />효율을 높이고 시간을 단축하기 위해 재사용성을 고려하며 작업한 프로젝트 입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/23_REPIS-%EB%B6%80%EB%8F%99%EC%82%B0%EC%9B%90/%EB%B6%80%EB%8F%99%EC%82%B0%EC%9B%90/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <!-- <img src="../images/vr07_middle01.png" alt="KGEOP 입지분석시스템 이미지"> -->
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr09.png" alt="REPIS 부동산원 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection10" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBSITE(반응형)</h3>
+                                                <h4 class="title title04">똑똑청년농부</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    대민사이트 퍼블리싱
+                                                    <br /><br />
+                                                    반응형으로 구성된 페이지 입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/ifcom/25_%EB%98%91%EB%98%91%EC%B2%AD%EB%85%84%EB%86%8D%EB%B6%80/%EB%98%91%EB%98%91%EC%B2%AD%EB%85%84%EB%86%8D%EB%B6%80/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr08_middle01.png" alt="똑똑청년농부 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr10.png" alt="똑똑청년농부 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection11" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">WEBAPP</h3>
+                                                <h4 class="title title04">룰루메딕</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    룰루메딕 webapp 퍼블리싱
+                                                    <br /><br />
+                                                    현대ezwell app 내부에 들어가는 룰루메딕 webapp으로
+                                                    VanilaScript를 사용하였으며 <br class="pc" /> 아이폰 노치 디자인을 반영하여 작성된 프로젝트 입니다.
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/short-period-of-time/02_PJT02/index.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr09_middle01.png" alt="룰루메딕 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr11.png" alt="룰루메딕 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                            <section id="vrSection12" class="vrSection">
+                                <article class="vrCont">
+                                    <div class="inner">
+                                        <article class="textArea">
+                                            <article class="titleArea">
+                                                <h3 class="title title03">MOBILEWEB</h3>
+                                                <h4 class="title title04">워크트로닉스</h4>
+                                                <p class="skill">PUBLISHING</p>
+                                            </article>
+                                            <article class="descArea">
+                                                <p class="desc desc01">
+                                                    워크트로닉스 민간 홈페이지 모바일 퍼블리싱
+                                                    <br /><br />
+                                                    
+                                                    745px 디자인만 나왔지만 1024px에서 갤럭시 폴드 전면부 화면까지 커버될수 있도록<br class="pc" /> mobile용으로 작성된 프로젝트 입니다. 
+                                                </p>
+                                                <article class="linkArea">
+                                                    <a href="https://j45bongsik.github.io/short-period-of-time/01_PJT01/%EC%9B%8C%ED%81%AC%ED%8A%B8%EB%A1%9C%EB%8B%89%EC%8A%A4/build/html/00_coding_list.html" alt="새창으로 바로가기" target="_blank">바로가기</a>
+                                                </article>
+                                            </article>
+                                        </article>
+
+                                        <article class="imgArea">
+                                            <article class="vrPoligon">
+                                                <img src="../images/vr10_middle01.png" alt="워크트로닉스 이미지">
+                                            </article>
+                                        </article>
+                                    </div>
+                                    <img src="../images/bg_vr12.png" alt="워크트로닉스 배경이미지" class="sectionBg">
+                                    <div class="sectionDimm"></div>
+                                </article>
+                            </section>
+                        </article>
+                    </section>
+                    <section id="section4" class="section">
+                        <article class="bgFixedArea">
+                            <div class="lottieItem developer02"></div>
+                            <article class="titleArea">
+                                <h4 class="title title05">
+                                    REFRENCE <em>GUIDE</em>
+                                </h4>
+                            </article>
+                        </article>
+
+                        <article class="horizontalArea">
+                            <div class="horizontalItem">
+                                <div class="itemBox">
+                                    <div class="boxBgArea">
+                                        <div class="boxDimm"></div>
+                                        <img src="../images/bg_ref01.png" alt="REFRENCE 01 이미지" class="boxImg">
+                                    </div>
+                                    <div class="boxContArea">
+                                        <div class="titleArea">
+                                            <h4 class="title title06">
+                                                <em>PORTFOLIO</em> v.7
+                                            </h4>
+                                            <p class="desc">
+                                                slick, onePageScroll, anime 인터렉션을 사용해 작성했으며 챗봇을 통한 실시간 채팅이 가능합니다. naver analytics와 google analytics가 심어진 반응형 사이트 입니다.
+                                            </p>
+                                            <a href="http://dnrlekzz.dothome.co.kr/pfv7/front/index/index02.html" target="_blank" alt="새창으로 바로가기">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="horizontalItem">
+                                <div class="itemBox">
+                                    <div class="boxBgArea">
+                                        <div class="boxDimm"></div>
+                                        <img src="../images/bg_ref02.png" alt="REFRENCE 02 이미지" class="boxImg">
+                                    </div>
+                                    <div class="boxContArea">
+                                        <div class="titleArea">
+                                            <h4 class="title title06">
+                                                <em class='type02'>PORTFOLIO</em> v.6
+                                            </h4>
+                                            <p class="desc">
+                                                유튜브 레이아웃을 참고해 glassmorphism 인터렉션을 추가해 작성했으며 google analytics가 심어진 반응형 사이트 입니다.
+                                            </p>
+                                            <a href="http://j46.dothome.co.kr/pfv6/front/main.html" target="_blank" alt="새창으로 바로가기" class="type02">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="horizontalItem">
+                                <div class="itemBox">
+                                    <div class="boxBgArea">
+                                        <div class="boxDimm"></div>
+                                        <img src="../images/bg_ref03.png" alt="REFRENCE 03 이미지" class="boxImg">
+                                    </div>
+                                    <div class="boxContArea">
+                                        <div class="titleArea">
+                                            <h4 class="title title06">
+                                                <em class='type03'>PORTFOLIO</em> v.5
+                                            </h4>
+                                            <p class="desc">
+                                                카카오 레이아웃을 참고해 video를 활용하였으며 google analytics가 심어진 반응형 사이트 입니다.
+                                            </p>
+                                            <a href="http://dnrlekzz.dothome.co.kr/pfv5/front/main.html" target="_blank" alt="새창으로 바로가기" class="type03">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="horizontalItem">
+                                <div class="itemBox">
+                                    <div class="boxBgArea">
+                                        <div class="boxDimm"></div>
+                                        <img src="../images/bg_ref04.png" alt="REFRENCE 04 이미지" class="boxImg">
+                                    </div>
+                                    <div class="boxContArea">
+                                        <div class="titleArea">
+                                            <h4 class="title title06">
+                                                <em class='type04'>PORTFOLIO</em> v.4
+                                            </h4>
+                                            <p class="desc">
+                                                캐롯 레이아웃을 참고해 Masonry 라이브러리를 사용해 작성한 반응형 사이트 입니다.
+                                            </p>
+                                            <a href="http://j46.dothome.co.kr/pfv4/front/main.html" target="_blank" alt="새창으로 바로가기" class="type04">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="horizontalItem">
+                                <div class="itemBox">
+                                    <div class="boxBgArea">
+                                        <div class="boxDimm"></div>
+                                        <img src="../images/bg_ref05.png" alt="REFRENCE 05 이미지" class="boxImg">
+                                    </div>
+                                    <div class="boxContArea">
+                                        <div class="titleArea">
+                                            <h4 class="title title06">
+                                                <em class='type05'>PUBLISHING</em><br />GUIDE
+                                            </h4>
+                                            <p class="desc">
+                                                인턴 기간중 작성한 퍼블리싱 가이드 사이트 입니다. 다양한 용도로 활용할수 있는 마크업과 규칙, 웹접근성 등 다양한 정보가 있습니다.
+                                            </p>
+                                            <a href="http://j45.dothome.co.kr/pub_guide/convention/intro.html" target="_blank" alt="새창으로 바로가기" class="type05">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="horizontalItem">
+                                <div class="itemBox">
+                                    <div class="boxBgArea">
+                                        <div class="boxDimm"></div>
+                                        <img src="../images/bg_ref06.png" alt="REFRENCE 06 이미지" class="boxImg">
+                                    </div>
+                                    <div class="boxContArea">
+                                        <div class="titleArea">
+                                            <h4 class="title title06">
+                                                기업 <em class='type06'>홈페이지</em><br />고도화
+                                            </h4>
+                                            <p class="desc">
+                                                인턴 기간중 참여한 리뉴얼 및 고도화 작업으로 퍼블리싱을 담당 했습니다.
+                                            </p>
+                                            <a href="javascript:void(0)" target="_blank" alt="" class="not type06">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="horizontalItem">
+                                <div class="itemBox">
+                                    <div class="boxBgArea">
+                                        <div class="boxDimm"></div>
+                                        <img src="../images/bg_ref07.png" alt="REFRENCE 07 이미지" class="boxImg">
+                                    </div>
+                                    <div class="boxContArea">
+                                        <div class="titleArea">
+                                            <h4 class="title title06">
+                                                예제 <em class='type07'>템플릿</em>
+                                            </h4>
+                                            <p class="desc">
+                                                다양한 매체를 통해 정보를 수집해 업무 시 활용될만한 인터렉티브한 내용들을 작성하고 있습니다.
+                                            </p>
+                                            <a href="http://dnrlekzz.dothome.co.kr/ex_library/front/index.html" target="_blank" alt="새창으로 바로가기"  class="type07">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <section id="section5" class="section">
+                        <article class="secCont">
+                            <div class="inner">
+                                <article class="contactArea">
+                                    <div class="titleArea">
+                                        <h4 class="title title07">
+                                            CONTACT_US
+                                        </h4>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                가치를 상승시킬수 있게 한발 더 앞서 나가겠습니다.
+                                        </li>
+                                        <li>
+                                            <p>dnrlekzz@naver.com</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="socialArea">
+                                        <a href="https://github.com/j45bongsik" target="_blank" alt="새창으로 바로가기" class="git"><span>GitHub</span></a>
+                                        <a href="https://everlasting-archduke-b2e.notion.site/Publishing-Cheat-Sheet-f551ebb6f9b24f74ab9920dd021cd7a4" target="_blank" alt="새창으로 바로가기" class="notion"><span>NOTION</span></a>
+                                    </div>
+
+                                    
+                                </article>
+                                <div class="lottieItem developer03"></div>
+                            </div>
+                        </article>
+
+                    </section>
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //contents -->
+            
+        </main>
+        <!--//container-->
+
+        <!--footer-->
+        <footer id="footer">
+            
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,1427 @@
+@charset "utf-8";
+
+@import '_mixins';
+
+@media screen and (max-width: 1440px) {
+
+    #header {
+        .inner {
+            padding: 0px 20px;
+            .logoArea {
+                .logo {
+                    a {
+                    }
+                }
+            }
+            #gnb {
+                ul {
+                    li {
+                        a {
+                            &:hover {
+                            }
+                            &.active {
+                            }
+                        }
+                        &:not(:first-child) {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section {
+        
+        &#section1 {
+    
+        }
+        &#section2 {
+            .pin-spacer {
+                position: fixed;
+                left:0;
+                
+            }
+            .secCont {
+                padding: 0px 40px;
+            }
+        }
+        .secCont {
+            
+            &:after {
+            }
+            .bgArea {}
+            .bgDimm {
+            }
+            .tagArea {
+                .tag {
+                    @keyframes fontSizeAnimation {
+                        0%, 100% {
+                        }
+                        50% {
+                        }
+                    }
+            
+                    @keyframes infinity {
+                        0%, 100% {
+                        }
+                        25% {
+                        }
+                        50% {
+                        }
+                        75% {
+                        }
+                    }
+                }
+            }
+            >.titleArea {
+                .title {}
+            }
+            .flexArea {
+                .txtArea {
+                    ul {
+                        li {
+                            p {
+                            }
+                        }
+                    }
+                }
+                .imojiArea {
+                    ul {
+                        li {
+                            img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#section3 {
+            .secCont {
+                &:after {
+                }
+            }
+        }
+        &#section4 {
+        }
+        &#section5 {
+            .inner {
+                padding: 0px 40px;
+            }
+        }
+        .vrSection {
+            
+
+            .sectionBg {
+            }
+            .sectionDimm {
+            }
+            .vrCont {
+                .inner {
+                    padding: 0px 40px;
+                    .textArea {
+                        .titleArea {
+                            .title {
+                                &.title03 {
+                                }
+                            }
+                            .skill {
+                            }
+                        }
+                        .descArea {
+                            .desc {}
+                        }
+                        .linkArea {
+                            a {
+                                &:hover {
+                                }
+                            }
+                        }
+                        
+                    }
+                    .imgArea {
+                        .vrPoligon {
+                            img {
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    
+
+
+
+}//1440
+
+
+@media screen and (max-width: 1280px) {
+
+    .loadingArea {
+        &.off {
+        }
+        @keyframes fadeOut {
+            to {
+            }
+        }
+        .aniArea {
+            .lottieItem {
+                &:nth-child(2) {
+                }
+            }
+        }
+        .titleArea {
+            .title {
+            }
+            .loadingPercent {
+                p {
+                }
+            }
+        }
+        
+    }
+
+    .gallery {
+        .left {
+            width: 100%;
+            z-index: 2;
+            .textArea {
+                .text {
+                    h4 {
+                        &.last {
+                        }
+                    }
+                    p {
+                    }
+                }
+            }
+        }
+        .pin-spacer {
+        position: fixed !important;
+        width: 100% !important;
+        }
+        .right {
+            width: 100% !important;
+            max-width: 100% !important;
+            z-index: 1;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            .imojiArea {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0.4;
+                .imoji {
+                }
+            }
+        }
+    }
+    
+
+}// 1280
+
+@media screen and (max-width: 1024px) {
+
+    .titleArea {
+        .title {
+            &.title01 {
+            }
+            &.title02 {
+                font-size: 100px;
+                em {
+                    }               
+            }
+            @keyframes heartbeat {
+                0%, 100% {
+                }
+                50% {
+                }
+            }
+            &.title03 {
+            }
+            &.title04 {
+            }
+            &.title05 {
+                em {
+                }
+            }
+            &.title06 {
+                em {
+                    &.type02 {
+                    }
+                    &.type03 {
+                    }
+                    &.type04 {
+                    }
+                    &.type05 {
+                    }
+                    &.type06 {
+                    }
+                    &.type07 {
+                    }
+                }
+            }
+            &.title07 {
+                font-size: 44px;
+            }
+            
+        }
+    }
+
+    .contactArea {
+        .title {}
+        ul {
+            li {
+                p {
+                    &:before {
+                    }
+                }
+                &:not(:first-child) {
+                }
+            }
+        }
+    
+        .socialArea {
+            a {
+                &.git {
+                    &:before {
+                    }
+                    
+                }
+                &.notion {
+                    &:before {
+                    }
+                }
+                &:not(:first-child) {
+                }
+                &:after {
+                }
+                &:hover {
+                    &:after {
+                    }
+                }
+            }
+        }
+    }
+
+
+}//1024
+@media screen and (max-width: 960px) {
+
+    .titleArea {
+        .title {
+            &.title01 {
+            }
+            &.title02 {
+                font-size: 70px;
+                em {
+                    }               
+            }
+            @keyframes heartbeat {
+                0%, 100% {
+                }
+                50% {
+                }
+            }
+            &.title03 {
+                font-size: 28px;
+            }
+            &.title04 {
+                font-size: 52px;
+            }
+            &.title05 {
+                em {
+                }
+            }
+            &.title06 {
+                em {
+                    &.type02 {
+                    }
+                    &.type03 {
+                    }
+                    &.type04 {
+                    }
+                    &.type05 {
+                    }
+                    &.type06 {
+                    }
+                    &.type07 {
+                    }
+                }
+            }
+            &.title07 {
+    
+            }
+            
+        }
+    }
+    
+    .section {
+        &#section1 {
+    
+        }
+        &#section2 {
+        }
+        .secCont {
+            &:after {
+            }
+            .bgArea {}
+            .bgDimm {
+            }
+            .tagArea {
+                .tag {
+                    @keyframes fontSizeAnimation {
+                        0%, 100% {
+                        }
+                        50% {
+                        }
+                    }
+            
+                    @keyframes infinity {
+                        0%, 100% {
+                        }
+                        25% {
+                        }
+                        50% {
+                        }
+                        75% {
+                        }
+                    }
+                }
+            }
+            >.titleArea {
+                .title {}
+            }
+            .flexArea {
+                .txtArea {
+                    ul {
+                        li {
+                            p {
+                            }
+                        }
+                    }
+                }
+                .imojiArea {
+                    ul {
+                        li {
+                            img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#section3 {
+            .secCont {
+                &:after {
+                }
+            }
+        }
+        &#section4 {
+        }
+        &#section5 {
+            .inner {
+            }
+        }
+        .vrSection {
+
+            .sectionBg {
+            }
+            .sectionDimm {
+            }
+            .vrCont {
+                .inner {
+                    .textArea {
+                        .titleArea {
+                            .title {
+                                &.title03 {
+                                }
+                            }
+                            .skill {
+                            }
+                        }
+                        .descArea {
+                            .desc {}
+                        }
+                        .linkArea {
+                            a {
+                                &:hover {
+                                }
+                            }
+                        }
+                        
+                    }
+                    .imgArea {
+                        .vrPoligon {
+                            width: 300px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+}//960
+@media screen and (max-width: 768px) {
+    .loadingArea {
+        &.off {
+        }
+        @keyframes fadeOut {
+            to {
+            }
+        }
+        .aniArea {
+            .lottieItem {
+                &:nth-child(2) {
+                }
+            }
+        }
+        .titleArea {
+            .title {
+                font-size: 44px;
+            }
+            .loadingPercent {
+                p {
+                    font-size: 44px;
+                }
+            }
+        }
+        
+    }
+
+    .titleArea {
+        .title {
+            &.title01 {
+            }
+            &.title02 {
+                font-size: 70px;
+                em {
+                    }               
+            }
+            @keyframes heartbeat {
+                0%, 100% {
+                }
+                50% {
+                }
+            }
+            &.title03 {
+                font-size: 20px;
+            }
+            &.title04 {
+                font-size: 40px;
+            }
+            &.title05 {
+                font-size: 44px;
+                em {
+                }
+            }
+            &.title06 {
+                font-size: 44px;
+                em {
+                    &.type02 {
+                    }
+                    &.type03 {
+                    }
+                    &.type04 {
+                    }
+                    &.type05 {
+                    }
+                    &.type06 {
+                    }
+                    &.type07 {
+                    }
+                }
+            }
+            &.title07 {
+                font-size: 38px;
+            }
+            
+        }
+    }
+
+    #header {
+        position: fixed;
+        left: auto;
+        z-index: 999;
+        right: 20px !important; top: 50% !important;
+        transform: translate(0px, 0px) !important;
+        width: 10px;
+        height: auto;
+        background: none;
+        z-index: 999;
+        #accNav {display: none;}
+        .inner {
+            padding: 0;
+            justify-content: center; align-items: center;
+            .logoArea {
+                display: none;
+                .logo {
+                    a {
+                    }
+                }
+            }
+            #gnb {
+                height: auto;
+                margin-left: 0;
+                ul {
+                    display: flex; flex-direction: column;
+                    li {
+                        width: auto; height: auto;
+                        a {
+                            display: block;
+                            width: 10px; height: 10px;
+                            border-radius: 50%;
+                            background: #999999;
+                            span {
+                                display: none;
+                            }
+                            &:hover {
+                            }
+                            &.active {
+                                background: #ff9d9d;
+                            }
+                        }
+                        &:not(:first-child) {
+                            margin-left: 0;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .section {
+        &#section1 {
+    
+        }
+        &#section2 {
+        }
+        .secCont {
+            &:after {
+            }
+            .bgArea {}
+            .bgDimm {
+            }
+            .tagArea {
+                .tag {
+                    font-size: 16px;
+                    @keyframes fontSizeAnimation {
+                        0%, 100% {
+                        }
+                        50% {
+                        }
+                    }
+            
+                    @keyframes infinity {
+                        0%, 100% {
+                        }
+                        25% {
+                        }
+                        50% {
+                        }
+                        75% {
+                        }
+                    }
+                }
+            }
+            >.titleArea {
+                .title {}
+            }
+            .flexArea {
+                .txtArea {
+                    ul {
+                        li {
+                            p {
+                            }
+                        }
+                    }
+                }
+                .imojiArea {
+                    ul {
+                        li {
+                            img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#section3 {
+            .secCont {
+                &:after {
+                }
+            }
+        }
+        &#section4 {
+        }
+        &#section5 {
+            .inner {
+                display: block;
+                position: relative;
+                .lottieItem {
+                    z-index: 1;
+                    position: absolute;
+                    left: 50%; top: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0.4;
+                    
+                }
+            }
+        }
+        .vrSection {
+
+            .sectionBg {
+            }
+            .sectionDimm {
+            }
+            .vrCont {
+                .inner {
+                    .textArea {
+                        justify-content: center;
+                        padding-bottom: 0;
+                        .titleArea {
+                            .title {
+                                &.title03 {
+                                }
+                            }
+                            .skill {
+                                font-size: 10px;
+                                margin-left: -21px;
+                                margin-bottom: -11px;
+                            }
+                        }
+                        .descArea {
+                            .desc {
+                                font-size: 14px;
+                                .pc {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .linkArea {
+                            a {
+                                height: 30px;
+                                line-height: 30px;
+                                font-size: 14px;
+                                &:hover {
+                                }
+                            }
+                        }
+                        
+                    }
+                    .imgArea {
+                        display: none;
+                        .vrPoligon {
+                            img {
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .gallery {
+        .left {
+            .textArea {
+                .text {
+                    h4 {
+                        font-size: 24px;
+                        &.last {
+                            font-size: 28px;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .pin-spacer {
+        }
+        .right {
+            
+            .imojiArea {
+                .imoji {
+                }
+            }
+        }
+    }
+
+    .horizontalArea {
+        .horizontalItem {
+            .itemBox {
+                width: 425px; height: 300px;
+                .boxBgArea {
+                    .boxDimm {
+                        &:after {
+                        }
+                    }
+                    .boxImg {
+                    }
+                }
+                .boxContArea {
+                    .titleArea {
+                        .desc {
+                            font-size: 14px;
+                        }
+                        a {
+                            font-size: 14px;
+                            text-align: center;
+                            &:hover {
+                            }
+                            &.type02 {
+                                &:hover {
+                                }
+                            }
+                            &.type03 {
+                                &:hover {
+                                }
+                            }
+                            &.type04 {
+                                &:hover {
+                                }
+                            }
+                            &.type05 {
+                                &:hover {
+                                }
+                            }
+                            &.type06 {
+                                &:hover {
+                                }
+                            }
+                            &.type07 {
+                                &:hover {
+                                }
+                            }
+                            &.not {
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .contactArea {
+        position: relative;
+        z-index: 2;
+        .title {}
+        ul {
+            li {
+                p {
+                    font-size: 16px;
+                    &:before {
+                        height: 16px;
+                    }
+                }
+                &:not(:first-child) {
+                }
+            }
+        }
+    
+        .socialArea {
+            a {
+                font-size: 16px;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 40px;
+                &.git {
+                    &:before {
+                        width: 30px; height: 30px;
+                    }
+                    
+                }
+                &.notion {
+                    &:before {
+                        width: 30px; height: 30px;
+                    }
+                }
+                &:not(:first-child) {
+                }
+                &:after {
+                    left: 40px;
+                }
+                &:hover {
+                    &:after {
+                        width: calc(100% - 50px);
+                    }
+                }
+            }
+        }
+    }
+
+}//768
+
+@media screen and (max-width: 425px) { 
+
+    .titleArea {
+        .title {
+            &.title01 {
+            }
+            &.title02 {
+                em {
+                    }               
+            }
+            @keyframes heartbeat {
+                0%, 100% {
+                }
+                50% {
+                }
+            }
+            &.title03 {
+            }
+            &.title04 {
+            }
+            &.title05 {
+                font-size: 22px;
+                em {
+                }
+            }
+            &.title06 {
+                font-size: 22px;
+                em {
+                    &.type02 {
+                    }
+                    &.type03 {
+                    }
+                    &.type04 {
+                    }
+                    &.type05 {
+                    }
+                    &.type06 {
+                    }
+                    &.type07 {
+                    }
+                }
+            }
+            &.title07 {
+    
+            }
+            
+        }
+    }
+
+    .gallery {
+        .left {
+            .textArea {
+                .text {
+                    h4 {
+                        &.last {
+                        }
+                    }
+                    p {
+                    }
+                }
+            }
+        }
+        .pin-spacer {
+        }
+        .right {
+            .imojiArea {
+                .imoji {
+                }
+            }
+        }
+    }
+
+    .section {
+        &#section1 {
+    
+        }
+        &#section2 {
+        }
+        .secCont {
+            &:after {
+            }
+            .bgArea {}
+            .bgDimm {
+            }
+            .tagArea {
+                .tag {
+                    @keyframes fontSizeAnimation {
+                        0%, 100% {
+                        }
+                        50% {
+                        }
+                    }
+            
+                    @keyframes infinity {
+                        0%, 100% {
+                        }
+                        25% {
+                        }
+                        50% {
+                        }
+                        75% {
+                        }
+                    }
+                }
+            }
+            >.titleArea {
+                .title {}
+            }
+            .flexArea {
+                .txtArea {
+                    ul {
+                        li {
+                            p {
+                            }
+                        }
+                    }
+                }
+                .imojiArea {
+                    ul {
+                        li {
+                            img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#section3 {
+            .secCont {
+                &:after {
+                }
+            }
+        }
+        &#section4 {
+        }
+        &#section5 {
+            .inner {
+                .lottieItem {
+                }
+            }
+        }
+        .vrSection {
+
+            .sectionBg {
+            }
+            .sectionDimm {
+            }
+            .vrCont {
+                .inner {
+                    .textArea {
+                        .titleArea {
+                            .title {
+                                &.title03 {
+                                }
+                            }
+                            .skill {
+                                display: none;
+                            }
+                        }
+                        .descArea {
+                            .desc {
+                                .pc {
+                                }
+                            }
+                        }
+                        .linkArea {
+                            a {
+                                &:hover {
+                                }
+                            }
+                        }
+                        
+                    }
+                    .imgArea {
+                        .vrPoligon {
+                            img {
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .horizontalArea {
+        .horizontalItem {
+            .itemBox {
+                width: 320px; height: 300px;
+                .boxBgArea {
+                    .boxDimm {
+                        &:after {
+                        }
+                    }
+                    .boxImg {
+                    }
+                }
+                .boxContArea {
+                    .titleArea {
+                        .desc {
+                            font-size: 14px;
+                        }
+                        a {
+                            font-size: 14px;
+                            text-align: center;
+                            &:hover {
+                            }
+                            &.type02 {
+                                &:hover {
+                                }
+                            }
+                            &.type03 {
+                                &:hover {
+                                }
+                            }
+                            &.type04 {
+                                &:hover {
+                                }
+                            }
+                            &.type05 {
+                                &:hover {
+                                }
+                            }
+                            &.type06 {
+                                &:hover {
+                                }
+                            }
+                            &.type07 {
+                                &:hover {
+                                }
+                            }
+                            &.not {
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .contactArea {
+        .title {}
+        ul {
+            li {
+                p {
+                    font-size: 14px;
+                    &:before {
+                    }
+                }
+                &:not(:first-child) {
+                }
+            }
+        }
+    
+        .socialArea {
+            a {
+                &.git {
+                    &:before {
+                        width: 30px; height: 30px;
+                    }
+                    
+                }
+                &.notion {
+                    &:before {
+                        width: 30px; height: 30px;
+                    }
+                }
+                &:not(:first-child) {
+                }
+                &:after {
+                    left: 40px;
+                }
+                &:hover {
+                    &:after {
+                        width: calc(100% - 50px);
+                    }
+                }
+            }
+        }
+    }
+
+}// 425
+
+@media screen and (max-width: 375px) {
+    .loadingArea {
+        &.off {
+        }
+        @keyframes fadeOut {
+            to {
+            }
+        }
+        .aniArea {
+            .lottieItem {
+                &:nth-child(2) {
+                }
+            }
+        }
+        .titleArea {
+            .title {
+            }
+            .loadingPercent {
+                p {
+                }
+            }
+        }
+        
+    }
+
+    .titleArea {
+        .title {
+            &.title01 {
+            }
+            &.title02 {
+                em {
+                    }               
+            }
+            @keyframes heartbeat {
+                0%, 100% {
+                }
+                50% {
+                }
+            }
+            &.title03 {
+                font-size: 16px;
+            }
+            &.title04 {
+                font-size: 26px;
+            }
+            &.title05 {
+                em {
+                }
+            }
+            &.title06 {
+                em {
+                    &.type02 {
+                    }
+                    &.type03 {
+                    }
+                    &.type04 {
+                    }
+                    &.type05 {
+                    }
+                    &.type06 {
+                    }
+                    &.type07 {
+                    }
+                }
+            }
+            &.title07 {
+    
+            }
+            
+        }
+    }
+
+    .gallery {
+        .left {
+            .textArea {
+                .text {
+                    h4 {
+                        font-size: 22px;
+                        &.last {
+                            font-size: 24px;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .pin-spacer {
+        }
+        .right {
+            display: none;
+            .imojiArea {
+                .imoji {
+                }
+            }
+        }
+    }
+
+    .section {
+        &#section1 {
+    
+        }
+        &#section2 {
+        }
+        .secCont {
+            &:after {
+            }
+            .bgArea {}
+            .bgDimm {
+            }
+            .tagArea {
+                .tag {
+                    font-size: 16px;
+                    @keyframes fontSizeAnimation {
+                        0%, 100% {
+                        }
+                        50% {
+                        }
+                    }
+            
+                    @keyframes infinity {
+                        0%, 100% {
+                        }
+                        25% {
+                        }
+                        50% {
+                        }
+                        75% {
+                        }
+                    }
+                }
+            }
+            >.titleArea {
+                .title {}
+            }
+            .flexArea {
+                .txtArea {
+                    ul {
+                        li {
+                            p {
+                            }
+                        }
+                    }
+                }
+                .imojiArea {
+                    ul {
+                        li {
+                            img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#section3 {
+            .secCont {
+                &:after {
+                }
+            }
+        }
+        &#section4 {
+        }
+        &#section5 {
+            .inner {
+            }
+        }
+        .vrSection {
+
+            .sectionBg {
+            }
+            .sectionDimm {
+            }
+            .vrCont {
+                .inner {
+                    .textArea {
+                        .titleArea {
+                            .title {
+                                &.title03 {
+                                }
+                            }
+                            .skill {
+                                font-size: 10px;
+                            }
+                        }
+                        .descArea {
+                            .desc {
+                                font-size: 14px;
+                                .pc {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .linkArea {
+                            a {
+                                height: 30px;
+                                line-height: 30px;
+                                font-size: 14px;
+                                &:hover {
+                                }
+                            }
+                        }
+                        
+                    }
+                    .imgArea {
+                        display: none;
+                        .vrPoligon {
+                            img {
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+
+}//375
+@media screen and (max-width: 320px) {
+
+    .horizontalArea {
+        .horizontalItem {
+            .itemBox {
+                width: 260px; height: 300px;
+                .boxBgArea {
+                    .boxDimm {
+                        &:after {
+                        }
+                    }
+                    .boxImg {
+                    }
+                }
+                .boxContArea {
+                    .titleArea {
+                        .desc {
+                            font-size: 14px;
+                        }
+                        a {
+                            font-size: 14px;
+                            text-align: center;
+                            &:hover {
+                            }
+                            &.type02 {
+                                &:hover {
+                                }
+                            }
+                            &.type03 {
+                                &:hover {
+                                }
+                            }
+                            &.type04 {
+                                &:hover {
+                                }
+                            }
+                            &.type05 {
+                                &:hover {
+                                }
+                            }
+                            &.type06 {
+                                &:hover {
+                                }
+                            }
+                            &.type07 {
+                                &:hover {
+                                }
+                            }
+                            &.not {
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}//320
