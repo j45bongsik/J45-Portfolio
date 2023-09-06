@@ -337,7 +337,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 trigger: target,
                 start: "top 75%",
                 end: "+=400",
-                markers: true,
             }
         });
     });
@@ -370,7 +369,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 trigger: target,
                 start: "top 90%",
                 end: "+=400",
-                markers: true,
             }
         });
     });
