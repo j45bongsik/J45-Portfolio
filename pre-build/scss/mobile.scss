@@ -914,6 +914,11 @@
 
     .gallery {
         .left {
+            .lottieItem {
+                &.plane {
+                    width: 100px;
+                }
+            }
             .textArea {
                 .text {
                     h4 {
@@ -1231,6 +1236,9 @@
                     }
                     p {
                         font-size: 14px;
+                        .pc {
+                            display: none;
+                        }
                     }
                 }
             }

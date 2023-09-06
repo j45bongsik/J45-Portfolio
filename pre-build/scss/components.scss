@@ -115,6 +115,8 @@
 }
 
 
+
+
 /* =============== Area =============== */
 .loadingArea {
     position: fixed; left: 0; top: 0;
@@ -233,12 +235,6 @@
     margin: 0 auto;
     height: 100vh;
     overflow: hidden;
-    &#section1 {
-
-    }
-    &#section2 {
-        height: auto;
-    }
     .secCont {
         width: 100%; height: 100%;
         position: relative;
@@ -341,6 +337,17 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    &#section1 {
+
+    }
+    &#section2 {
+        height: auto;
+        .secCont {
+            &:after {
+                background: linear-gradient(0deg, #161c29, rgba(80, 69, 171, 0));
             }
         }
     }
@@ -471,8 +478,49 @@
 
 .gallery {
     display:flex;	
+    .lottieItem {
+        &.cloud01 {
+            position: absolute;
+            top : 100px; 
+            left: 0;
+            width: 300px;
+        }
+        &.cloud02 {
+            width: 600px; height: 600px;
+            position: absolute;
+            &.pos01 {
+                left: 40%;
+                top:10%
+            }
+            &.pos02 {
+                left: 10%;
+                top:30%
+            }
+            &.pos03 {
+                left: 30%;  
+                top:50%
+            }
+            &.pos04 {
+                right: 30%;
+                top: 75%;
+            }
+            &.pos05 {
+                left: 0;
+                bottom: 5%;
+            }
+        }
+    }
     .left {
         flex:1;
+        position: relative;
+        .lottieItem {
+            &.plane {
+                width: 200px; height: 200px;
+                position: absolute;
+                z-index: 2;
+            }
+            
+        }
         .textArea {
             .text {
                 min-height:100vh;
@@ -518,6 +566,7 @@
                 background: #161c29;
             }
         }
+        
     }
 }
 
