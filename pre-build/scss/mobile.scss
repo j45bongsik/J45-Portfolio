@@ -54,21 +54,30 @@
             }
             .tagArea {
                 .tag {
+                    font-size: 24px;
+                    animation: infinity 4s ease-in-out infinite, fontSizeAnimation 3s infinite;
+                    
                     @keyframes fontSizeAnimation {
                         0%, 100% {
+                            font-size: 24px;
                         }
                         50% {
+                            font-size: 28px;
                         }
                     }
             
                     @keyframes infinity {
                         0%, 100% {
+                            transform: translate(0, 0);
                         }
                         25% {
+                            transform: translate(20px, 20px);
                         }
                         50% {
+                            transform: translate(0, 40px);
                         }
                         75% {
+                            transform: translate(-20px, 20px);
                         }
                     }
                 }
@@ -372,21 +381,30 @@
             }
             .tagArea {
                 .tag {
+                    font-size: 24px;
+                    animation: infinity 4s ease-in-out infinite, fontSizeAnimation 3s infinite;
+                    
                     @keyframes fontSizeAnimation {
                         0%, 100% {
+                            font-size: 24px;
                         }
                         50% {
+                            font-size: 28px;
                         }
                     }
             
                     @keyframes infinity {
                         0%, 100% {
+                            transform: translate(0, 0); 
                         }
                         25% {
+                            transform: translate(20px, 20px);
                         }
                         50% {
+                            transform: translate(0, 40px);
                         }
                         75% {
+                            transform: translate(-20px, 20px);
                         }
                     }
                 }
@@ -613,21 +631,29 @@
             .tagArea {
                 .tag {
                     font-size: 16px;
+                    animation: infinity 4s ease-in-out infinite, fontSizeAnimation 3s infinite;
+                    
                     @keyframes fontSizeAnimation {
                         0%, 100% {
+                            font-size: 16px;
                         }
                         50% {
+                            font-size: 20px;
                         }
                     }
             
                     @keyframes infinity {
                         0%, 100% {
+                            transform: translate(0, 0); 
                         }
                         25% {
+                            transform: translate(20px, 20px);
                         }
                         50% {
+                            transform: translate(0, 40px);
                         }
                         75% {
+                            transform: translate(-20px, 20px);
                         }
                     }
                 }
@@ -702,7 +728,7 @@
                             .desc {
                                 font-size: 14px;
                                 .pc {
-                                    display: none;
+                                    display: none !important;
                                 }
                             }
                         }
@@ -954,21 +980,30 @@
             }
             .tagArea {
                 .tag {
+                    font-size: 16px;
+                    animation: infinity 4s ease-in-out infinite, fontSizeAnimation 3s infinite;
+                    
                     @keyframes fontSizeAnimation {
                         0%, 100% {
+                            font-size: 16px;
                         }
                         50% {
+                            font-size: 20px;
                         }
                     }
             
                     @keyframes infinity {
                         0%, 100% {
+                            transform: translate(0, 0); 
                         }
                         25% {
+                            transform: translate(20px, 20px); 
                         }
                         50% {
+                            transform: translate(0, 40px); 
                         }
                         75% {
+                            transform: translate(-20px, 20px); 
                         }
                     }
                 }
@@ -1237,7 +1272,7 @@
                     p {
                         font-size: 14px;
                         .pc {
-                            display: none;
+                            display: none !important;
                         }
                     }
                 }
@@ -1269,21 +1304,29 @@
             .tagArea {
                 .tag {
                     font-size: 16px;
+                    animation: infinity 4s ease-in-out infinite, fontSizeAnimation 3s infinite;
+                    
                     @keyframes fontSizeAnimation {
                         0%, 100% {
+                            font-size: 16px;
                         }
                         50% {
+                            font-size: 20px;
                         }
                     }
             
                     @keyframes infinity {
                         0%, 100% {
+                            transform: translate(0, 0); 
                         }
                         25% {
+                            transform: translate(20px, 20px); 
                         }
                         50% {
+                            transform: translate(0, 40px); 
                         }
                         75% {
+                            transform: translate(-20px, 20px); 
                         }
                     }
                 }
@@ -1344,7 +1387,7 @@
                             .desc {
                                 font-size: 14px;
                                 .pc {
-                                    display: none;
+                                    display: none !important;
                                 }
                             }
                         }
