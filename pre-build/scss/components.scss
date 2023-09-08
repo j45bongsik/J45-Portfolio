@@ -533,12 +533,22 @@
                     &.last {
                         font-size: 80px;
                     }
+                    &.splitChar {
+                        span {
+                            // display: inline-block;
+                        }
+                    }
                 }
                 p {
                     margin-top: 30px;
                     color: #fff;
                     @include fontInfo(Noto Sans Light, 18px);
                     line-height: 1.4;
+                    &.splitLine {
+                        span {
+                            display: inline-block;
+                        }
+                    }
                 }
             }
         }
