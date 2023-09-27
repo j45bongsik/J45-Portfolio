@@ -114,6 +114,17 @@
     margin: 0px auto;
 }
 
+.checkbox {
+    &.type01 {
+        input[type="checkbox"] {}
+        label {
+            position: absolute;
+            left: 0; top: 0;
+            padding-left: 20px;
+        }
+    }
+}
+
 
 
 
@@ -123,7 +134,7 @@
     width: 100%; height: 100%;
     display: flex; justify-content: center; align-items: center;
     z-index: 9999;
-    background: #161c29;
+    background: #06142e;
     &.off {
         // animation: fadeOut 1s ease 1s forwards;
     }
@@ -205,10 +216,10 @@
                         text-align: center;
                         height: 100%;
                         &:hover {
-                            color: #fdc128;
+                            color: #f1916d;
                         }
                         &.active {
-                            color: #fdc128;
+                            color: #f1916d;
                         }
                     }
                     &:not(:first-child) {
