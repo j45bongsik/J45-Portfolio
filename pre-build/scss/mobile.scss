@@ -880,7 +880,7 @@
                 }
                 &:hover {
                     &:after {
-                        width: calc(100% - 50px);
+                        display: none;
                     }
                 }
             }
@@ -1417,7 +1417,55 @@
 
 
 }//375
+
 @media screen and (max-width: 320px) {
+
+    .titleArea {
+        .title {
+            &.title01 {
+            }
+            &.title02 {
+                em {
+                    }               
+            }
+            @keyframes heartbeat {
+                0%, 100% {
+                }
+                50% {
+                }
+            }
+            &.title03 {
+                font-size: 16px;
+            }
+            &.title04 {
+                font-size: 26px;
+            }
+            &.title05 {
+                em {
+                }
+            }
+            &.title06 {
+                em {
+                    &.type02 {
+                    }
+                    &.type03 {
+                    }
+                    &.type04 {
+                    }
+                    &.type05 {
+                    }
+                    &.type06 {
+                    }
+                    &.type07 {
+                    }
+                }
+            }
+            &.title07 {
+                font-size: 28px;
+            }
+            
+        }
+    }
 
     .horizontalArea {
         .horizontalItem {
@@ -1475,4 +1523,51 @@
         }
     }
 
+    .contactArea {
+        .title {}
+        ul {
+            li {
+                p {
+                    &:before {
+                    }
+                }
+                &:not(:first-child) {
+                }
+            }
+        }
+    
+        .socialArea {
+            flex-wrap: wrap;
+            justify-content: center;
+            a {
+
+                &.git {
+                    &:before {
+                    }
+                    
+                }
+                &.notion {
+                    &:before {
+                    }
+                }
+                &:not(:first-child) {
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+                &:after {
+                }
+                &:hover {
+                    &:after {
+                    }
+                }
+            }
+        }
+    }
+
 }//320
+
+@media screen and (max-width: 320px) {
+
+
+
+}

@@ -68,54 +68,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const texts = gsap.utils.toArray(".text:not(:first-child)")
     const imojis = gsap.utils.toArray(".imoji:not(:first-child)")
 
-
     gsap.set(imojis, {yPercent:101})
 
     const allimojis = gsap.utils.toArray(".imoji")
 
+    ScrollTrigger.create({
+        trigger:".gallery",
+        start:"top top",
+        end:"bottom bottom",
+        pin:".right"
+    })
 
-    // create
-    let mm = gsap.matchMedia();
+    texts.forEach((detail, index)=> {
 
-    // add a media query. When it matches, the associated function will run
-    mm.add("(min-width: 425px)", () => {
-
-    // this setup code only runs when viewport is at least 600px wide
-        console.log("desktop")
-            
+        let headline = detail.querySelector("h4")
+        let animation = gsap.timeline()
+        .to(imojis[index], {yPercent:0})
+        .set(allimojis[index], {autoAlpha:0})
         ScrollTrigger.create({
-            trigger:".gallery",
-            start:"top top",
-            end:"bottom bottom",
-            pin:".right"
+            trigger:headline,
+            start:"top 80%",
+            end:"top 50%",
+            animation:animation,
+            scrub:true,
+            markers:false
         })
-
-        //create scrolltrigger for each texts section
-        //trigger photo animation when headline of each texts section 
-        //reaches 80% of window height
-        texts.forEach((detail, index)=> {
-
-            let headline = detail.querySelector("h4")
-            let animation = gsap.timeline()
-            .to(imojis[index], {yPercent:0})
-            .set(allimojis[index], {autoAlpha:0})
-            ScrollTrigger.create({
-                trigger:headline,
-                start:"top 80%",
-                end:"top 50%",
-                animation:animation,
-                scrub:true,
-                markers:false
-            })
-        })
-            
-            
-        
-        return () => { // optional
-            // custom cleanup code here (runs when it STOPS matching)
-            console.log("mobile")
-        };
-    });
+    })
 
 
     const slides = document.querySelectorAll(".vrSection");
